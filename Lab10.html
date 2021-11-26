@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {
+		background-color:beige;
+		} 
+		h1 {
+			color:navy;
+			text-decoration:underline;
+		}
+		h4{
+			color:indigo;
+			font-size:15pt;
+		}
+		em{
+			background-color:powderblue;
+			color:navy;
+		}
+		h3 em{
+			background-color:thistle;
+			color:purple;
+		}
+		.ena em{
+			background-color:thistle;
+			color:inherit;
+		}
+	</style>	
+</head>
+<body>
+<table border="1" width="50%">
+		<tr>
+			<th colspan="3">
+				<h1>About--110306026</h1>
+			</th>
+		</tr>	
+		<tr>
+			<td rowspan="3">
+				<div align="center">
+					<img src="ena.png" width="130" height="100"><br>
+					<h4>personal photo</h4>
+				</div>
+			</td>
+			<td colspan="2">
+					<form>
+						<label>Name:
+							<input type="text" name="name" size="4" maxlength="8">
+						</label><br>
+						<label>Gender:
+							<input type="radio" name="gemder" value="male">Male
+							<input type="radio" name="gemder" value="female">Female
+							<input type="radio" name="gemder" value="other">Other
+						</label>
+					
+				</td>
+			<tr>
+				<td>
+					<label>County:
+						<select name="county">
+							<option value="taipei">Taipei</option>
+							<option value="tainan">Tainan</option>
+							<option value="taichung">Taichung</option>
+							<option value="taoyuan">Taoyuan</option>
+						</select>
+					</label>
+				</td>
+				<td>
+					<label>Birthday:
+						<input type="date" name="birthday">
+					</label>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<label>E-mail:
+						<input type="mail" name="e-mail" size="25">
+					</label>
+				</td>
+			</tr>
+		</tr>
+		<tr >
+			<td>
+				<em>Hobby</em>
+			</td>
+			<td colspan="3">
+					<h3>
+					<input type="checkbox" value="swimming">Swimming
+					<input type="checkbox" value="volleyball">Valleybal
+					<input type="checkbox" value="movie">Movie
+					<input type="checkbox" value="game">Game
+					<input type="checkbox" value="sleep"><em>Sleep</em>
+					</h3>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h4>Skkill</h4>
+			</td>
+			<td colspan="3">
+					<div class="ena" style="color:saddlebrown;">
+					<input type="checkbox" value="java">Java
+					<input type="checkbox" value="html"><em>HTML</em>
+					<input type="checkbox" value="python">Python
+					<input type="checkbox" value="microsoft office">Microsoft Office
+					<input type="checkbox" value="premiere">Premiere
+				
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h4>Say Something</h4>
+			</td>
+			<td colspan="3">
+				
+					<input type="textarea" cols="50" rows="5" placeholder="Say something here.">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="4">
+				<input type="submit" value="submit">
+				<input type="reset" value="clear">
+			</td>
+		</tr>
+		</form>
+	</table>
+</body>
+</html>
